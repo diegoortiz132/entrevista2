@@ -14,12 +14,12 @@ import Fondo1 from './Fotomanos.png'
 
 
 export const Navbar = () => {
-  const [menuRigth, setMenuRigth] = useState(true);
+  const [menuRigth, setMenuRigth] = useState(false);
   const Animacion = () => {
       setMenuRigth(!menuRigth)
   } 
   return(
-    <div style={{height: '100px'}}>
+    <div>
       <Row>
           <Col span={5}>
             

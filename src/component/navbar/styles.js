@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled, {keyframes} from 'styled-components'
 
 export const Nav = styled.div`
   background: #911712;
@@ -64,6 +64,16 @@ export const ImgRedes = styled.img`
     este es el boton de al lado
 */
 
+const aparecer = keyframes`
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+`
+
+
 export const BoxRight = styled.div`
     width: 790px;
     height: 1027px;
@@ -72,7 +82,10 @@ export const BoxRight = styled.div`
     float: right;
     animation-duration: 4s;
     animation-delay: 2s;
-    margin-top: -1088px; 
+    margin-top: -1088px;
+      animation-name: ${aparecer};
+      animation-duration: 3s;
+      animation-fill-mode: forwards;
 `
 
 export const TituloDerecha = styled.h1`
